@@ -12,8 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Handler().postDelayed(Runnable { // This method will be executed once the timer is over
-            val i = Intent(this@MainActivity, SignupScreen::class.java)
-            startActivity(i)
+            startActivity(Intent(this@MainActivity, SignupScreen::class.java))
             finish()
         }, 5000)
     }
