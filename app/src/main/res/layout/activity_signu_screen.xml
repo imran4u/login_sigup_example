@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,12 +14,14 @@
     android:background="@drawable/background">
 
     <ImageView
+        android:padding="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@mipmap/dolphin_icon"
         android:layout_gravity="center_horizontal"
         />
     <TextView
+        android:padding="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -22,4 +29,57 @@
         android:textColor="#00FF00"
         android:text="Welcome to Dolfil \n Good to see you may I know your name please... "/>
 
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+    </androidx.viewpager.widget.ViewPager>
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTINUE"/>
+
+    <TextView
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textColor="#00FF00"
+        android:text="Don't worrry if you want to open account\n you will get free access as gust as well"/>
+
+<Button
+    android:id="@+id/btn_ias"
+    android:layout_margin="16dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="IAS"
+    android:background="@drawable/circluar_shap_green"/>
+    <Button
+        android:id="@+id/btn_school"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCHOOL"
+        android:background="@drawable/circluar_shap_purpel"/>
+    <Button
+        android:id="@+id/btn_college"
+        android:layout_gravity="right"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COLLAGE"
+        android:background="@drawable/circluar_shap_college"/>
+    <Button
+        android:id="@+id/btn_tution"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TUTION"
+        android:background="@drawable/circluar_shap_tution"/>
 </LinearLayout>
+</ScrollView>
